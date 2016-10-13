@@ -22,9 +22,9 @@ for arp in arpscan.split('\n'):
 	if re.search(tv_mac.lower(),arp):
 		tv_ip = arp.split()[1].strip('()')
 		break
-if tv_ip:
+try:
 	print "TV IP address: " + tv_ip
-else:
+except NameError:
 	print "TV not found, Make sure MAC address is correct and TV is connected and this device can see it"
 	exit()
 
