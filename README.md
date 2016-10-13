@@ -15,5 +15,6 @@ Basic control for turning on a Sony Bravia TV and changing HDMI
 ## Installation
 * `git clone https://github.com/Charliedean/sonybraviacontrol.git `
 * `pip install wakeonlan`
+* `cd sonybraviacontrol`
 * Edit tvwake.py with your TV MAC address and hdmi choice
 * python ./tvwake.py
